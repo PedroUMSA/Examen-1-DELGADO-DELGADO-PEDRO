@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 20-10-2020 a las 04:31:44
+-- Tiempo de generación: 20-10-2020 a las 15:59:20
 -- Versión del servidor: 5.5.24-log
 -- Versión de PHP: 5.4.3
 
@@ -90,6 +90,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `nick` varchar(50) NOT NULL,
   `ci` int(11) DEFAULT NULL,
   `clave` varchar(50) NOT NULL,
+  `color` int(11) DEFAULT NULL,
   PRIMARY KEY (`nick`),
   KEY `ci` (`ci`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -98,14 +99,14 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`nick`, `ci`, `clave`) VALUES
-('amt', 102, '123456'),
-('csc', 100, '123456'),
-('cvp', 106, '123456'),
-('dmr', 103, '123456'),
-('lps', 105, '123456'),
-('maq', 101, '123456'),
-('mjse', 104, '123456');
+INSERT INTO `usuario` (`nick`, `ci`, `clave`, `color`) VALUES
+('amt', 102, '123456', 3),
+('csc', 100, '123456', 1),
+('cvp', 106, '123456', 1),
+('dmr', 103, '123456', 1),
+('lps', 105, '123456', 1),
+('maq', 101, '123456', 1),
+('mjse', 104, '123456', 1);
 
 --
 -- Restricciones para tablas volcadas
