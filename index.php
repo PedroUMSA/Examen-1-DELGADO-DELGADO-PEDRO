@@ -17,7 +17,6 @@ include "cabecera.ini.php";
             <input type="password" name="p" placeholder="contraseña" />
             <br>
             <button type="submit" class="btn ">Entrar</button>
-            <input type="text" class="input1" name="select" value="v1">
         </form>
     </div>
 </body>
