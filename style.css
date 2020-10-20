@@ -1,7 +1,7 @@
 
 .btn {
-	display: inline-block;
 	background-color:#4a77d4;
+	display: inline-block;
 	color: white;
 	border-radius: 5%;
 	border-color: transparent;
@@ -9,13 +9,7 @@
 	width: 100px;
 }
 
-.body1 { 
-	width: 100%;
-	height:100%;
-	font-family: 'Open Sans', sans-serif;
-	background: #092756;
-	text-align: justify;
-}
+
 
 .login { 
 	position: absolute;
@@ -44,7 +38,7 @@ input {
 	width: 100px;
 	background-color: white;
 	border-radius:10% 50% 10% 50%;
-	margin: 0 0 0 100px;
+
 }
 /*inicio*/
 
@@ -54,8 +48,73 @@ input {
 	width: 100px;
 	background-color: white;
 	border-radius:50% 10% 50% 10%;
-	margin: 0 0 0 100px;
 }
 .input1{
 	display: none;
+}
+.body11{
+	width: 90%;
+	height:90%;
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+	background: #092756;
+	border: 0px;
+	padding: 0px;
+}
+.body12{
+	width: 90%;
+	height:90%;
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+background: #177534;
+}
+.body13{
+	width: 90%;
+	height:90%;
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+background: #820d0d;
+}
+.body14{
+	width: 90%;
+	height:90%;
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+background: #737814;
+}
+.btn1{
+	display: inline-block;
+	color: white;
+	border-radius: 5%;
+	border-color: transparent;
+	height: 30px;
+	width: 100px;
+background: #2466bd;
+}
+.btn2{
+	display: inline-block;
+	color: white;
+	border-radius: 5%;
+	border-color: transparent;
+	height: 30px;
+	width: 100px;
+background: #26bf55;
+}
+.btn3{
+	display: inline-block;
+	color: white;
+	border-radius: 5%;
+	border-color: transparent;
+	height: 30px;
+	width: 100px;
+background: #e01616;
+}
+.btn4{
+	display: inline-block;
+	color: white;
+	border-radius: 5%;
+	border-color: transparent;
+	height: 30px;
+	width: 100px;
+background: #c1c926;
 }

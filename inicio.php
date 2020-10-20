@@ -1,5 +1,6 @@
 <?php
 include "conexion.inc.php";
+include "cabecera.ini.php";
 
 $user = $_GET["u"];
 $passw = $_GET["p"];
@@ -15,38 +16,27 @@ $c4=false;
 
 $condicion = $_GET["select"];
 if ($condicion == 'v1') {
-  $color1 = '#092756';
-  $color2 = '#2466bd';
+  $cb='class="body11"';
+  $cbt='class="btn1"';
   $c1=true;
 } else if ($condicion == 'v2'){
-  $color1 ='#177534';
-  $color2 ='#26bf55';
+  $cb='class="body12"';
+  $cbt='class="btn2"';
   $c2=true;
 }else if($condicion == 'v3'){
-  $color1 ='#820d0d';
-  $color2 ='#e01616';
+  $cb='class="body13"';
+  $cbt='class="btn3"';
   $c3=true;
 } else if($condicion == 'v4'){
-  $color1 ='#737814';
-  $color2 ='#c1c926';
+  $cb='class="body14"';
+  $cbt='class="btn4"';
   $c4=true;
 }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body class="body1" <?php echo 'style="background:' . $color1 . ';"'; ?>>
-
+<body <?php echo $cb; ?>>
 
   <div class="login">
-    <img class="img1">
+  <center><img class="img1"></center>
     <br>
     <?php
     if(strlen($fila[0])==0){
@@ -54,7 +44,6 @@ if ($condicion == 'v1') {
     }else{
       echo '<h1>BIENVENIDA : ' . $fila[0] . '</h1>';
     }
-    
     ?>
     <br>
     <form method="get" action="inicio.php">
@@ -67,11 +56,11 @@ if ($condicion == 'v1') {
       <input class="input1" type="text" name="u" value=<?php echo $user; ?>>
       <input class="input1" type="text" name="p" value=<?php echo $passw; ?>>
       
-      <button type="submit" class="btn" <?php echo 'style="background:' . $color2 . ';"'; ?>>Recargar</button>
+      <button type="submit"  <?php echo $cbt; ?>>Recargar</button>
     </form>
     <br>
     <form action="index.php">
-    <button type="submit" class="btn" <?php echo 'style="background:' . $color2 . ';"'; ?>>Atras</button>
+    <button type="submit"  <?php echo $cbt; ?>>Atras</button>
     </form>
   </div>
 </body>
